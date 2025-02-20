@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <Navbar />
-    <ItemListContainer />
+    <ItemListContainer greetings="Bienvenidos a la pasteleria n°1 de Argentina" />
    
     </>
   );

@@ -1,0 +1,7 @@
+.carrito{
+    height: 2rem;
+}
+.containerCart{
+    display: flex;
+    align-items: center;
+}

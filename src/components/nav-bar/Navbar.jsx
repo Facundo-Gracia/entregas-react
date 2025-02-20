@@ -1,4 +1,5 @@
 import './Navbar.css';
+import CartWidget from '../CartWidget/Cartwidget';
 
 function Navbar() {
     return (
@@ -10,7 +11,7 @@ function Navbar() {
                     <li>Tortas</li>
                     <li>Galletitas</li>
                 </ul>
-                <img className='carrito' src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt=""/>
+                <CartWidget />
             </nav>
         </header>
     );
