@@ -1,13 +1,18 @@
 import './Item.css';
 
-function Item() {
+function Item({producto,precio}) {
+
+    function encargar(){
+        console.log("Encargaste: ",producto)
+    }
+
     return (
           <div className='cards'>
-            <h2>Torta oreo</h2>
-            <p>$10.000</p>
-            <button className='boton'>Comprar</button>
+            <h2>{producto || "Sin stock"}</h2>
+            <p>Precio ${precio || "Sin stock" } </p>
+            <button disabled={!producto} className='boton' onClick={() => encargar()}> Encargar</button>
           </div>
     );
 };
 
-export default Item;
+export default Item;    
